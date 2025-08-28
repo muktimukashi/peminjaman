@@ -7,9 +7,9 @@ st.set_page_config(page_title="Aplikasi Peminjaman Barang", layout="wide")
 # ------------------- INISIALISASI DATA -------------------
 if "inventory" not in st.session_state:
     st.session_state.inventory = pd.DataFrame({
-        "Kode Barang": ["BRG001", "BRG002", "BRG003", "BRG004"],
-        "Nama Barang": ["Laptop", "Mouse", "Proyektor", "Keyboard"],
-        "Stok": [10, 25, 5, 15]
+        "Kode Barang": ["SDS001", "SDS002"],
+        "Nama Barang": ["Laptop", "Mouse" ],
+        "Stok": [1, 1]
     })
 
 if "peminjaman" not in st.session_state:
